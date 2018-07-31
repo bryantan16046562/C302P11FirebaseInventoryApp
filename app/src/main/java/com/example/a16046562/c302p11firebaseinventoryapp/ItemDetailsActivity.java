@@ -40,7 +40,7 @@ public class ItemDetailsActivity extends AppCompatActivity {
                 //TODO: Update Student record based on input given
                 String id = item.getId();
                 String name = etName.getText().toString();
-                int cost = Integer.parseInt(etCost.getText().toString());
+                double cost = Double.parseDouble(etCost.getText().toString());
 
                 item.setId(null);
                 item.setCost(cost);

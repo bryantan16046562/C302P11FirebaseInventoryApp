@@ -31,7 +31,7 @@ public class AddItemActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //TODO: Task 3: Add student to database and go back to main screen
                 String name = etName.getText().toString();
-                int cost = Integer.parseInt(etCost.getText().toString());
+                double cost = Double.parseDouble(etCost.getText().toString());
                 Item item = new Item(name, cost);
 
                 //generates a unique key to uniquely identify each student
